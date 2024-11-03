@@ -35,21 +35,34 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         binding.saveBTN.setOnClickListener {
-            val person = Person(binding.nameET.text.toString(), binding.lastNameET.text.toString(), binding.phoneET.text.toString())
+            val person = Person(
+                binding.nameET.text.toString(),
+                binding.lastNameET.text.toString(),
+                binding.phoneET.text.toString()
+            )
             addPerson(db!!, person)
             readDatabase(db!!)
+
+            clearFields()
         }
+    }
+
+    private fun clearFields() {
+        binding.nameET.text.clear()
+        binding.lastNameET.text.clear()
+        binding.phoneET.text.clear()
     }
 
     @OptIn(DelicateCoroutinesApi::class)
     private fun addPerson(db: PersonDatabase, person: Person) = GlobalScope.async {
         db.getPersonDao().insert(person)
     }
+
     @OptIn(DelicateCoroutinesApi::class)
     private fun readDatabase(db: PersonDatabase) = GlobalScope.async {
         binding.resultTV.text = ""
         val list = db.getPersonDao().getAllPersons()
-        list.forEach{i -> binding.resultTV.append(i.name + " " + i.lastName + " " + i.phone + "\n")}
+        list.forEach { i -> binding.resultTV.append(i.name + " " + i.lastName + " " + i.phone + "\n") }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
