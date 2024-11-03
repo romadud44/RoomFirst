@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/text_toolbar_main" />
+    <EditText
+        android:textStyle="italic"
+        android:textSize="@dimen/_24sp"
+        android:textAlignment="center"
+        android:id="@+id/nameET"
+        android:hint="@string/hint_name_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"/>
+    <EditText
+        android:textStyle="italic"
+        android:textSize="@dimen/_24sp"
+        android:textAlignment="center"
+        android:id="@+id/lastNameET"
+        android:hint="@string/hint_last_name_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"/>
+    <EditText
+        android:textSize="@dimen/_24sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:id="@+id/phoneET"
+        android:hint="@string/hint_phone_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"/>
+    <Button
+        android:id="@+id/saveBTN"
+        android:text="@string/text_save_BTN"
+        android:textStyle="bold"
+        android:textSize="@dimen/_24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:textSize="@dimen/_20sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"/>
+    </ScrollView>
+</LinearLayout>

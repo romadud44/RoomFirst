@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RoomFirst</string>
+    <string name="text_menu_exit">Выход</string>
+    <string name="text_toolbar_main">Контакты</string>
+    <string name="hint_name_ET">Имя</string>
+    <string name="hint_phone_ET">Телефон</string>
+    <string name="hint_last_name_ET">Фамилия</string>
+    <string name="text_save_BTN">Сохранить</string>
+</resources>
