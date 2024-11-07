@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_8dp"/>
     <Button
+        android:onClick="saveData"
         android:id="@+id/saveBTN"
         android:text="@string/text_save_BTN"
         android:textStyle="bold"
@@ -52,17 +53,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_8dp"/>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
 
-    <TextView
-        android:id="@+id/resultTV"
-        android:textSize="@dimen/_20sp"
-        android:textAlignment="center"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_8dp"/>
-    </ScrollView>
+        android:layout_height="350dp"
+        android:layout_margin="@dimen/_8dp"
+        tools:listitem="@layout/list_item"/>
+
 </LinearLayout>

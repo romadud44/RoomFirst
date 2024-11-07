@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="toolbarColor">#108B77</color>
     <color name="ic_menu_exit_color">#EB0808</color>
+    <color name="list_item_color_background">#abcdef</color>
 </resources>

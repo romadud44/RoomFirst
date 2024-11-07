@@ -6,4 +6,8 @@
     <string name="hint_phone_ET">Телефон</string>
     <string name="hint_last_name_ET">Фамилия</string>
     <string name="text_save_BTN">Сохранить</string>
+    <string name="text_name_item_TV">Имя</string>
+    <string name="text_lastName_item_TV">Фамилия</string>
+    <string name="text_phone_item_TV">+79998887766</string>
+    <string name="text_time_item_TV">00:00</string>
 </resources>
